@@ -58,7 +58,7 @@ function imprimirPresupuesto(p) {
   .pie{margin-top:40px;text-align:center;font-size:11px;color:#9ca3af}
 </style></head><body>
 <div class="encabezado">
-  <div class="empresa"><h1>Luscher Hnos.</h1><p>Lubricentro y service automotor</p></div>
+  <div class="empresa"><h1>Mi Empresa</h1><p>Sistema de gestión</p></div>
   <div class="pres-info"><h2>Presupuesto</h2><p>Fecha: ${p.fecha}</p></div>
 </div>
 <div class="datos">
@@ -84,7 +84,7 @@ ${p.observaciones ? `<div class="obs"><strong>Observaciones:</strong> ${p.observ
 
 function compartirWhatsapp(p) {
   const lineas = [];
-  lineas.push(`*Presupuesto - Luscher Hnos.*`);
+  lineas.push(`*Presupuesto - Mi Empresa*`);
   lineas.push(`Fecha: ${p.fecha}`);
   lineas.push(`Cliente: ${p.clienteNombre}`);
   lineas.push(`Vehiculo: ${p.vehiculoPatente} - ${p.vehiculoModelo}`);

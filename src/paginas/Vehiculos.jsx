@@ -190,7 +190,7 @@ function Vehiculos() {
     const filasOtros = otrosItems.map((i) => fila("Otros", `${i.nombre} x${i.cantidad}`, i.precio * i.cantidad)).join("") || fila("Otros", "", 0);
     function buildOrden() {
       return `<div class="orden">
-        <div class="encabezado"><div class="empresa"><div class="empresa-nombre">LUSCHER HNOS.</div><div class="empresa-sub">MENDOZA 1457</div><div class="empresa-sub">3406-440041 / 3406-438400</div></div><div class="titulo-fecha"><div class="titulo">ORDEN DE SERVICIO</div><div class="fecha-val">${fecha}</div></div></div>
+        <div class="encabezado"><div class="empresa"><div class="empresa-nombre">MI EMPRESA</div><div class="empresa-sub"></div><div class="empresa-sub"></div></div><div class="titulo-fecha"><div class="titulo">ORDEN DE SERVICIO</div><div class="fecha-val">${fecha}</div></div></div>
         <table class="datos-cliente">
           <tr><td class="dc-label">CLIENTE</td><td class="dc-val">${mapaClientes[vehiculo.clienteId]?.nombre || vehiculo.dueno || ""}</td></tr>
           <tr><td class="dc-label">VEHICULO</td><td class="dc-val">${vehiculo.modelo || ""} - ${vehiculo.patente || ""}</td></tr>
