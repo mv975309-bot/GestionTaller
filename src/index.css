@@ -89,3 +89,47 @@ body {
   padding: 0;
 }
 .modal-x-btn:hover { color: #111; }
+
+/* ── Botones y inputs globales ── */
+.boton-guardar {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+.boton-guardar:hover { background: #4338ca; }
+.boton-guardar:active { background: #3730a3; }
+
+.boton-cancelar {
+  background: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+.boton-cancelar:hover { background: #f3f4f6; }
+
+.input-producto {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 0.9rem;
+  color: #111827;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.15s;
+  background: white;
+  margin-bottom: 8px;
+}
+.input-producto:focus { border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79,70,229,0.1); }
