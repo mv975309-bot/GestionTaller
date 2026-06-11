@@ -1,0 +1,110 @@
+.boton-importar-vehiculos {
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #374151;
+  font-weight: 500;
+}
+.boton-importar-vehiculos:hover { background: #e5e7eb; }
+
+.importador-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.importador-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 28px;
+  width: 100%;
+  max-width: 560px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.importador-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.importador-header h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+.importador-cerrar {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+.importador-cerrar:hover { color: #374151; }
+
+.importador-body { display: flex; flex-direction: column; gap: 14px; }
+
+.importador-label {
+  font-size: 0.9rem;
+  color: #374151;
+  margin: 0;
+}
+
+.importador-exito {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: #166534;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.input-archivo {
+  font-size: 0.88rem;
+  color: #374151;
+}
+
+.preview-vehiculos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.preview-vehiculo-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.preview-vehiculo-header {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+.preview-vehiculo-header strong { color: #111827; }
+.preview-vehiculo-header span { color: #6b7280; font-size: 0.85rem; }
+
+.preview-services-count {
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+.preview-ultimo { color: #4f46e5; }
